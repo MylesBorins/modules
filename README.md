@@ -65,6 +65,6 @@ Work includes:
 - [@TheLarkInn](https://github.com/TheLarkInn) - Sean Larkin
 - [@WebReflection](https://github.com/WebReflection) - Andrea Giammarchi
 - [@yosuke-furukawa](https://github.com/yosuke-furukawa) - Yosuke Furukawa
-- [@zackschuster](https://github.com/zackschuster) - Zack Schuster
+- [@zackschuster](https://github.com/zackschuster) - 
 
 <!-- ncu-team-sync end -->
