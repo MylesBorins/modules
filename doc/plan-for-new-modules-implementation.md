@@ -22,7 +22,11 @@ These features will be part of the first phase of development:
   - In a later phase, the intention is to move forward with format databases to map extensions and support multiple use cases.
   - No JSON or native modules; `createRequireFunction` can be used to get these.
 
+* `import.meta.url`.
+  - Already in the existing implementation.
+
 * Dynamic `import()`.
+  - Already in the existing implementation.
 
 
 ### How will we get from where we are to Phase 1
@@ -50,8 +54,6 @@ These features are agreed upon, but make sense to include in a later phase of de
 * Browser-compatible specifier resolution ([#109](https://github.com/nodejs/modules/issues/109)), a.k.a. bare imports.
   - Implementation to be discussed, possibly based on [package name maps](https://github.com/domenic/package-name-maps).
   - Would support the `main` field for ESM.
-
-* `import.meta.url`.
 
 * Loaders ([#82](https://github.com/nodejs/modules/issues/82)), ([#96](https://github.com/nodejs/modules/issues/96)).
   - Implementation to be determined.
