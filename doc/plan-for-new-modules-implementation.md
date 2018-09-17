@@ -47,35 +47,8 @@ These features will be part of the first phase of development:
   - Implemented in https://github.com/nodejs/node/pull/19360
 
 
-## Phase 2
+## Later Phases
 
-These features are agreed upon, but make sense to include in a later phase of development; or there is agreement on the need for this feature, but a lack of consensus on the implementation details:
+There **will** be a Phase 2, and 3, and possibly more. We will **not** ship the code produced by Phase 1. This first phase lacks support for important use cases and will not be released as the new modules implementation.
 
-* Browser-compatible specifier resolution ([#109](https://github.com/nodejs/modules/issues/109)), a.k.a. bare imports.
-  - Implementation to be discussed, possibly based on [package name maps](https://github.com/domenic/package-name-maps).
-  - Would support the `main` field for ESM.
-
-* Loaders ([#82](https://github.com/nodejs/modules/issues/82)), ([#96](https://github.com/nodejs/modules/issues/96)).
-  - Implementation to be determined.
-
-* User-configurable map for file extensions to parse goals, a.k.a. `mimes` field ([#160](https://github.com/nodejs/modules/pull/160)).
-  - This can expand the uses of the `import` statement to import ES modules from `.js` files, as well as support JSON and other formats.
-  - Supported formats will have default mappings.
-  - Need to work out how this functionality interacts with loaders.
-
-## Phase 3 or Later
-
-These features are also expected to be included, but there is more uncertainty as to their implementation; or they depend on features in Phase 2:
-
-* Dynamic path searching.
-  - Requiring the full path is an issue for tooling and a long term solution is required.
-  - Migration strategies also have issue with this.
-  - Need to resolve issues related to building this in a browser-compatible way.
-
-* Multi-mode packages ([#94](https://github.com/nodejs/modules/issues/94)).
-
-* ESM in executable files ([#152](https://github.com/nodejs/modules/issues/152)).
-
-* Callable resolver ([#157](https://github.com/nodejs/modules/issues/157)).
-
-* Mock modules (injection) ([#98](https://github.com/nodejs/modules/issues/98)).
+That said, the time to plan out what goes into Phase 2 is once we’ve completed Phase 1. We are still committed to a final modules implementation ultimately supporting all of [the features listed in the README](https://github.com/nodejs/modules#features) unless we discuss and decide otherwise.
