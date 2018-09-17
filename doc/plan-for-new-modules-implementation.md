@@ -60,7 +60,7 @@ These features are agreed upon, but make sense to include in a later phase of de
 
 * User-configurable map for file extensions to parse goals, a.k.a. `mimes` field ([#160](https://github.com/nodejs/modules/pull/160)).
   - This can expand the uses of the `import` statement to import ES modules from `.js` files, as well as support JSON and other formats.
-  - Common formats like JSON or WASM will have default mappings.
+  - Supported formats will have default mappings.
   - Need to work out how this functionality interacts with loaders.
 
 ## Phase 3 or Later
