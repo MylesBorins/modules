@@ -14,9 +14,10 @@ See also the [features list in the README](https://github.com/nodejs/modules#fea
 
 These features will be part of the first phase of development:
 
-* `createRequireFunction` ([nodejs/node#19360](https://github.com/nodejs/node/pull/19360)) is the only way to import CommonJS into an ES module, for now.
-  - `import.meta.require` does not fail early enough.
+* `module.createRequireFromPath` ([nodejs/node#19360](https://github.com/nodejs/node/pull/19360)) is the only way to import CommonJS into an ES module, for now.
+  - `import.meta.require` fails at runtime as opposed to import time. This is not desireable to all committee members
   - Hold off on `import` statements for CommonJS until more progress is made on the dynamic modules spec.
+  - landed in https://github.com/nodejs/node/commit/246f6332e5a5f395d1e39a3594ee5d6fe869d622
 
 * `import` statements will only support files with an `.mjs` extension, and will import only ES modules, for now.
   - In a later phase, the intention is to move forward with format databases to map extensions and support multiple use cases.
@@ -43,12 +44,7 @@ These features will be part of the first phase of development:
   - No support for `main` field for ESM.
   - Implemented in https://github.com/nodejs/ecmascript-modules/pull/2
 
-* Add `createRequireFunction`.
-  - Implemented in https://github.com/nodejs/node/pull/19360
-
 
 ## Later Phases
 
-There **will** be a Phase 2, and 3, and possibly more. We will **not** ship the code produced by Phase 1. This first phase lacks support for important use cases and will not be released as the new modules implementation.
-
-That said, the time to plan out what goes into Phase 2 is once we’ve completed Phase 1. We are still committed to a final modules implementation ultimately supporting all of [the features listed in the README](https://github.com/nodejs/modules#features) unless we discuss and decide otherwise.
+There **will** be future phases. We will **not** ship the code produced by Phase 1. This first phase lacks support for important use cases and will not be released as the new modules implementation.
